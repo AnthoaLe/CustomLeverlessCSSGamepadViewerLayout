@@ -6,7 +6,10 @@
     and you can observe it as an example. The sticks, buttons, and directional arrows are missing
     because their appropriate elements will be incorperated when their styling is defined below.
     The entirity of the skin's visual styling is done via background images and CSS sprites. */
-
+    background-color: blue;
+    height: 850px;
+    width: 1600px;
+    top: 50%;
 }
 
 .pressed {
