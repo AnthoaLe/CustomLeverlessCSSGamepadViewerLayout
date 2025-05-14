@@ -1,0 +1,222 @@
+/*BEGIN Custom Controller Styling*/
+/*This class defines the base attributes of the skin*/
+.controller.custom{
+    /* The background image is basically the base for the controller's skin. The
+    PS3 controller's skin can be found at http://mrmcpowned.com/gamepad/ps3-assets/base.png
+    and you can observe it as an example. The sticks, buttons, and directional arrows are missing
+    because their appropriate elements will be incorperated when their styling is defined below.
+    The entirity of the skin's visual styling is done via background images and CSS sprites. */
+
+}
+.pressed {
+  transform: translateY(5px);
+  -webkit-filter: invert(1);
+}
+.custom.disconnected { /* This class shows an image when the controller is disconnected */
+    background-color: black;
+    height: 850px;
+    width: 1600px;
+    top: 50%;
+}
+/* This hides the controller's button when disconnected so only the background image remains */
+.custom.disconnected div {
+    display: none;
+}
+/* Analog sticks follow the same principles as the triggers in terms of positioning
+Note that the rotation of the sticks in hard coded with javascript, so it applies
+the CSS inline. */
+.custom .sticks{
+
+}
+.custom .stick.left{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 50px;
+  right: 425px;
+  background-size: contain;
+  background-image: url(drive%20parry.png);
+}
+/* Dpad positioning and sizing */
+.custom .dpad{
+
+}
+.custom .face.left{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  right: 325px;
+  background-size: contain;
+  background-image: url(left.png);
+}
+.custom .face.down{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 125px;
+  right: 225px;
+  background-size: contain;
+  background-image: url(down.png);
+}
+.custom .face.right{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  right: 125px;
+  background-size: contain;
+  background-image: url(right.png);
+}
+.custom .face.up{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  background-size: contain;
+  background-image: url(up.png);
+}
+/* Positioning and size of the container for the face buttons */
+.custom .abxy{
+
+}
+/* base class used to simplify the sprite mapping */
+.custom .button{
+
+}
+.custom .button.pressed{
+
+}
+.custom .a{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 125px;
+  left: 25px;
+  background-size: contain;
+  background-image: url(grab.png);
+}
+.custom .b{
+
+}
+.custom .x{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 75px;
+  left: 75px;
+  background-size: contain;
+  background-image: url(light%20kick.png);
+}
+.custom .y{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 175px;
+  left: 100px;
+  background-size: contain;
+  background-image: url(light%20punch.png);
+}
+.custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+
+}
+.custom .trigger{/* These are the actual triggers themselves */
+
+}
+.custom .trigger.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
+
+}
+/* The left and right classes below are used to position the triggers
+within the div they're contained in. Since their positions is relative
+to the size of the parent element, we simply resize the parent element
+above to achieve the desired position. */
+.custom .trigger-button.left{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  left: 175px;
+  background-size: contain;
+  background-image: url(medium%20kick.png);
+}
+.custom .trigger-button.right{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  left: 275px;
+  background-size: contain;
+  background-image: url(heavy%20kick.png);
+}
+/* The bumpers follow the same methodology as the triggers in terms of
+placement */
+.custom .bumpers{
+
+}
+.custom .bumper{
+
+}
+.custom .bumper.left{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 200px;
+  left: 200px;
+  background-size: contain;
+  background-image: url(medium%20punch.png);
+}
+.custom .bumper.right{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 200px;
+  left: 300px;
+  background-size: contain;
+  background-image: url(heavy%20punch.png);
+}
+.custom .stick.right{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 125px;
+  left: 400px;
+  background-size: contain;
+  background-image: url(drive%20impact.png);
+}
+/* This is to size and position the containing div for the
+start and select buttons. */
+.custom .arrows{
+
+}
+/* Setting the size and CSS sprite for the start adn select buttons */
+.custom .back{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 225px;
+  left: 25px;
+}
+.custom .start{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 225px;
+  right: 25px;
+}
+/*END Custom Controller Styling*/
