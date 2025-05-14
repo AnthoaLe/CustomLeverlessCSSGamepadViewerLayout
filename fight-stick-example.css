@@ -14,7 +14,7 @@
   -webkit-filter: invert(1);
 }
 
-.fight-stick.disconnected { /* This class shows an image when the controller is disconnected */
+.custom.disconnected { /* This class shows an image when the controller is disconnected */
     background-color: red;
     height: 850px;
     width: 1600px;
@@ -22,18 +22,18 @@
 }
 
 /* This hides the controller's button when disconnected so only the background image remains */
-.fight-stick.disconnected div {
+.custom.disconnected div {
     display: none;
 }
 
 /* Analog sticks follow the same principles as the triggers in terms of positioning
 Note that the rotation of the sticks in hard coded with javascript, so it applies
 the CSS inline. */
-.fight-stick .sticks{
+.custom .sticks{
 
 }
 
-.fight-stick .stick.left{
+.custom .stick.left{
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -44,11 +44,11 @@ the CSS inline. */
   background-image: url('buttons/drive\ parry.png');
 }
 /* Dpad positioning and sizing */
-.fight-stick .dpad{
+.custom .dpad{
 
 }
 
-.fight-stick .face.left{
+.custom .face.left{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -59,7 +59,7 @@ the CSS inline. */
   background-image: url(left.png);
 }
 
-.fight-stick .face.down{
+.custom .face.down{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -70,7 +70,7 @@ the CSS inline. */
   background-image: url(down.png);
 }
 
-.fight-stick .face.right{
+.custom .face.right{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -81,7 +81,7 @@ the CSS inline. */
   background-image: url(right.png);
 }
 
-.fight-stick .face.up{
+.custom .face.up{
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -93,20 +93,20 @@ the CSS inline. */
 }
 
 /* Positioning and size of the container for the face buttons */
-.fight-stick .abxy{
+.custom .abxy{
 
 }
 
 /* base class used to simplify the sprite mapping */
-.fight-stick .button{
+.custom .button{
 
 }
 
-.fight-stick .button.pressed{
+.custom .button.pressed{
 
 }
 
-.fight-stick .a{
+.custom .a{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -117,11 +117,11 @@ the CSS inline. */
   background-image: url(grab.png);
 }
 
-.fight-stick .b{
+.custom .b{
 
 }
 
-.fight-stick .x{
+.custom .x{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -132,7 +132,7 @@ the CSS inline. */
   background-image: url(light%20kick.png);
 }
 
-.fight-stick .y{
+.custom .y{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -143,15 +143,15 @@ the CSS inline. */
   background-image: url(light%20punch.png);
 }
 
-.fight-stick .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+.custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
 
 }
 
-.fight-stick .trigger{/* These are the actual triggers themselves */
+.custom .trigger{/* These are the actual triggers themselves */
 
 }
 
-.fight-stick .trigger.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
+.custom .trigger.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
 
 }
 
@@ -159,7 +159,7 @@ the CSS inline. */
 within the div they're contained in. Since their positions is relative
 to the size of the parent element, we simply resize the parent element
 above to achieve the desired position. */
-.fight-stick .trigger-button.left{
+.custom .trigger-button.left{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -170,7 +170,7 @@ above to achieve the desired position. */
   background-image: url(medium%20kick.png);
 }
 
-.fight-stick .trigger-button.right{
+.custom .trigger-button.right{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -183,15 +183,15 @@ above to achieve the desired position. */
 
 /* The bumpers follow the same methodology as the triggers in terms of
 placement */
-.fight-stick .bumpers{
+.custom .bumpers{
 
 }
 
-.fight-stick .bumper{
+.custom .bumper{
 
 }
 
-.fight-stick .bumper.left{
+.custom .bumper.left{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -202,7 +202,7 @@ placement */
   background-image: url(medium%20punch.png);
 }
 
-.fight-stick .bumper.right{
+.custom .bumper.right{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -213,7 +213,7 @@ placement */
   background-image: url(heavy%20punch.png);
 }
 
-.fight-stick .stick.right{
+.custom .stick.right{
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -226,12 +226,12 @@ placement */
 
 /* This is to size and position the containing div for the
 start and select buttons. */
-.fight-stick .arrows{
+.custom .arrows{
 
 }
 
 /* Setting the size and CSS sprite for the start adn select buttons */
-.fight-stick .back{
+.custom .back{
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -240,7 +240,7 @@ start and select buttons. */
   left: 25px;
 }
 
-.fight-stick .start{
+.custom .start{
   display: inline-block;
   width: 50px;
   height: 50px;
