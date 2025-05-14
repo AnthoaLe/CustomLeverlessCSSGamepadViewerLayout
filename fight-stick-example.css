@@ -8,20 +8,24 @@
     The entirity of the skin's visual styling is done via background images and CSS sprites. */
 
 }
+
 .pressed {
   transform: translateY(5px);
   -webkit-filter: invert(1);
 }
+
 .custom.disconnected { /* This class shows an image when the controller is disconnected */
-    background-color: black;
+    background-color: red;
     height: 850px;
     width: 1600px;
     top: 50%;
 }
+
 /* This hides the controller's button when disconnected so only the background image remains */
 .custom.disconnected div {
     display: none;
 }
+
 /* Analog sticks follow the same principles as the triggers in terms of positioning
 Note that the rotation of the sticks in hard coded with javascript, so it applies
 the CSS inline. */
