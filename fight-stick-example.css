@@ -1,6 +1,6 @@
 /*BEGIN Custom Controller Styling*/
 /*This class defines the base attributes of the skin*/
-.controller.custom{
+.controller.fight-stick{
     /* The background image is basically the base for the controller's skin. The
     PS3 controller's skin can be found at http://mrmcpowned.com/gamepad/ps3-assets/base.png
     and you can observe it as an example. The sticks, buttons, and directional arrows are missing
@@ -14,7 +14,7 @@
   -webkit-filter: invert(1);
 }
 
-.custom.disconnected { /* This class shows an image when the controller is disconnected */
+.fight-stick.disconnected { /* This class shows an image when the controller is disconnected */
     background-color: red;
     height: 850px;
     width: 1600px;
@@ -22,18 +22,18 @@
 }
 
 /* This hides the controller's button when disconnected so only the background image remains */
-.custom.disconnected div {
+.fight-stick.disconnected div {
     display: none;
 }
 
 /* Analog sticks follow the same principles as the triggers in terms of positioning
 Note that the rotation of the sticks in hard coded with javascript, so it applies
 the CSS inline. */
-.custom .sticks{
+.fight-stick .sticks{
 
 }
 
-.custom .stick.left{
+.fight-stick .stick.left{
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -44,10 +44,11 @@ the CSS inline. */
   background-image: url('buttons/drive\ parry.png');
 }
 /* Dpad positioning and sizing */
-.custom .dpad{
+.fight-stick .dpad{
 
 }
-.custom .face.left{
+
+.fight-stick .face.left{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -57,7 +58,8 @@ the CSS inline. */
   background-size: contain;
   background-image: url(left.png);
 }
-.custom .face.down{
+
+.fight-stick .face.down{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -67,7 +69,8 @@ the CSS inline. */
   background-size: contain;
   background-image: url(down.png);
 }
-.custom .face.right{
+
+.fight-stick .face.right{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -77,7 +80,8 @@ the CSS inline. */
   background-size: contain;
   background-image: url(right.png);
 }
-.custom .face.up{
+
+.fight-stick .face.up{
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -87,18 +91,22 @@ the CSS inline. */
   background-size: contain;
   background-image: url(up.png);
 }
+
 /* Positioning and size of the container for the face buttons */
-.custom .abxy{
+.fight-stick .abxy{
 
 }
+
 /* base class used to simplify the sprite mapping */
-.custom .button{
+.fight-stick .button{
 
 }
-.custom .button.pressed{
+
+.fight-stick .button.pressed{
 
 }
-.custom .a{
+
+.fight-stick .a{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -108,10 +116,12 @@ the CSS inline. */
   background-size: contain;
   background-image: url(grab.png);
 }
-.custom .b{
+
+.fight-stick .b{
 
 }
-.custom .x{
+
+.fight-stick .x{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -121,7 +131,8 @@ the CSS inline. */
   background-size: contain;
   background-image: url(light%20kick.png);
 }
-.custom .y{
+
+.fight-stick .y{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -131,20 +142,24 @@ the CSS inline. */
   background-size: contain;
   background-image: url(light%20punch.png);
 }
-.custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+
+.fight-stick .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
 
 }
-.custom .trigger{/* These are the actual triggers themselves */
+
+.fight-stick .trigger{/* These are the actual triggers themselves */
 
 }
-.custom .trigger.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
+
+.fight-stick .trigger.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
 
 }
+
 /* The left and right classes below are used to position the triggers
 within the div they're contained in. Since their positions is relative
 to the size of the parent element, we simply resize the parent element
 above to achieve the desired position. */
-.custom .trigger-button.left{
+.fight-stick .trigger-button.left{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -154,7 +169,8 @@ above to achieve the desired position. */
   background-size: contain;
   background-image: url(medium%20kick.png);
 }
-.custom .trigger-button.right{
+
+.fight-stick .trigger-button.right{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -164,15 +180,18 @@ above to achieve the desired position. */
   background-size: contain;
   background-image: url(heavy%20kick.png);
 }
+
 /* The bumpers follow the same methodology as the triggers in terms of
 placement */
-.custom .bumpers{
+.fight-stick .bumpers{
 
 }
-.custom .bumper{
+
+.fight-stick .bumper{
 
 }
-.custom .bumper.left{
+
+.fight-stick .bumper.left{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -182,7 +201,8 @@ placement */
   background-size: contain;
   background-image: url(medium%20punch.png);
 }
-.custom .bumper.right{
+
+.fight-stick .bumper.right{
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -192,7 +212,8 @@ placement */
   background-size: contain;
   background-image: url(heavy%20punch.png);
 }
-.custom .stick.right{
+
+.fight-stick .stick.right{
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -202,13 +223,15 @@ placement */
   background-size: contain;
   background-image: url(drive%20impact.png);
 }
+
 /* This is to size and position the containing div for the
 start and select buttons. */
-.custom .arrows{
+.fight-stick .arrows{
 
 }
+
 /* Setting the size and CSS sprite for the start adn select buttons */
-.custom .back{
+.fight-stick .back{
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -216,7 +239,8 @@ start and select buttons. */
   bottom: 225px;
   left: 25px;
 }
-.custom .start{
+
+.fight-stick .start{
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -224,4 +248,5 @@ start and select buttons. */
   bottom: 225px;
   right: 25px;
 }
+
 /*END Custom Controller Styling*/
